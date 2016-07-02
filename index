@@ -1,4 +1,3 @@
-
 # First line is the header fields for columns and is mandatory.
 # Regular expressions are supported in all fields except the first.
 # Last field supports variable length command completion.
@@ -77,3 +76,6 @@ paloalto_panos_show_running_nat-policy.template, .*, paloalto_panos, sh[[ow]] ru
 paloalto_panos_show_running_security-policy.template, .*, paloalto_panos, sh[[ow]] runn[[ing]] security[[-policy]]
 paloalto_panos_show_interface_logical.template, .*, paloalto_panos, sh[[ow]] int[[erface]] logi[[cal]]
 paloalto_panos_show_interface_hardware.template, .*, paloalto_panos, sh[[ow]] int[[erface]] hard[[ware]]
+cisco_ios_show_interfaces_template, .*, cisco_ios, sh[[ow]] inte[[rfaces]]
+cisco_ios_show_memory_template, .*, cisco_ios, sh[[ow]] memory
+cisco_ios_show_route_summary_template, .*, cisco_ios, sh[[ow] route summary
