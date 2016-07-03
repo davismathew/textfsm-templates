@@ -78,4 +78,4 @@ paloalto_panos_show_interface_logical.template, .*, paloalto_panos, sh[[ow]] int
 paloalto_panos_show_interface_hardware.template, .*, paloalto_panos, sh[[ow]] int[[erface]] hard[[ware]]
 cisco_ios_show_interfaces_template, .*, cisco_ios, sh[[ow]] inte[[rfaces]]
 cisco_ios_show_memory_template, .*, cisco_ios, sh[[ow]] memory
-cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow] route summary
+cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow] ip route summary
