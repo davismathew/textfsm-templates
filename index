@@ -18,7 +18,7 @@ hp_comware_display_vlan_brief.template, .*, hp_comware, di[[splay]] v[[lan]] b[[
 cisco_nxos_show_version.template, .*, cisco_nxos, sh[[ow]] ver[[sion]]
 cisco_wlc_ssh_show_sysinfo.template, .*, cisco_wlc_ssh, sh[[ow]] sysi[[nfo]]
 cisco_ios_show_spanning-tree.template, .*, cisco_ios, sh[[ow]] sp[[anning-tree]]
-cisco_ios_show_ip_route.template, .*, cisco_ios, sh[[ow]] ip r[[oute]]
+#cisco_ios_show_ip_route.template, .*, cisco_ios, sh[[ow]] ip r[[oute]]
 cisco_ios_show_ip_bgp_summary.template, .*, cisco_ios, sh[[ow]] ip bgp sum[[mary]]
 cisco_ios_show_interface_transceiver.template, .*, cisco_ios, sh[[ow]] int[[erface]] trans[[ceiver]]
 cisco_ios_show_standby_brief.template, .*, cisco_ios, sh[[ow]] standby br[[ief]]
@@ -39,7 +39,7 @@ cisco_nxos_show_interface_status.template, .*, cisco_nxos, sh[[ow]] int[[erface]
 cisco_nxos_show_feature.template, .*, cisco_nxos, sh[[ow]] feat[[ure]]
 arista_eos_show_vlan.template, .*, arista_eos, sh[[ow]] vl[[an]]
 cisco_nxos_show_mac_address-table.template, .*, cisco_nxos, sh[[ow]] m[[ac]] addr[[ess-table]]
-cisco_ios_show_mac-address-table.template, .*, cisco_ios, sh[[ow]] m[[ac-address-table]]
+#cisco_ios_show_mac-address-table.template, .*, cisco_ios, sh[[ow]] m[[ac-address-table]]
 cisco_nxos_show_ip_ospf_neighbor_vrf.template, .*, cisco_nxos, sh[[ow]] ip ospf nei[[ghbor]] vrf (\S+)
 cisco_nxos_show_ip_dhcp_relay_address.template, .*, cisco_nxos, sh[[ow]] ip dh[[cp]] r[[elay]] a[[ddress]]
 cisco_ios_show_snmp_community.template, .*, cisco_ios, sh[[ow]] sn[[mp]] com[[munity]]
@@ -76,6 +76,7 @@ paloalto_panos_show_running_nat-policy.template, .*, paloalto_panos, sh[[ow]] ru
 paloalto_panos_show_running_security-policy.template, .*, paloalto_panos, sh[[ow]] runn[[ing]] security[[-policy]]
 paloalto_panos_show_interface_logical.template, .*, paloalto_panos, sh[[ow]] int[[erface]] logi[[cal]]
 paloalto_panos_show_interface_hardware.template, .*, paloalto_panos, sh[[ow]] int[[erface]] hard[[ware]]
-cisco_ios_show_interfaces_template, .*, cisco_ios, sh[[ow]] inte[[rfaces]]
-cisco_ios_show_memory_template, .*, cisco_ios, sh[[ow]] memory
-cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow] route summary
+cisco_ios_show_interfaces_template, .*, cisco_ios, show interfaces
+cisco_ios_show_memory_template, .*, cisco_ios, show m[[emory]]
+cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow]] ip r[[oute]] summary
+cisco_ios_show_isis_neighbor_template .*, cisco_ios, show isis
