@@ -1,0 +1,14 @@
+Value Required System (\S{15})
+Value Type (\S{2})
+Value Interface (\S+)
+Value Required RemoteIP (\d+(\.\d+){3})
+Value HoldTime (\d+)
+Value Circuit (\S+)
+Value Status (\S+)
+
+Start
+  ^${System}(\s+)${Type}(\s+)${Interface}(\s+)${RemoteIP}(\s+)${Status}(\s+)${HoldTime}(\s+)${Circuit} -> Record
+  ^${System}.* -> Record
+
+# Last record is already recorded then skip doing so here.
+EOF
