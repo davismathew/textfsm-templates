@@ -7,6 +7,6 @@ Value Circuit (\S+)
 Value Status (\S+)
 
 Start
-  ^${System}(\s+)${Type}(\s+)${Interface}(\s+)${RemoteIP}(\s+)${Status}(\s+)${HoldTime}(\s+)${Circuit} -> Record
+  ^${System}(\s*)${Type}(\s+)${Interface}(\s+)${RemoteIP}(\s+)${Status}(\s+)${HoldTime}(\s+)${Circuit} -> Record
   ^${System}.* -> Record
 
