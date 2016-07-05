@@ -10,5 +10,3 @@ Start
   ^${System}(\s+)${Type}(\s+)${Interface}(\s+)${RemoteIP}(\s+)${Status}(\s+)${HoldTime}(\s+)${Circuit} -> Record
   ^${System}.* -> Record
 
-# Last record is already recorded then skip doing so here.
-EOF
