@@ -11,16 +11,6 @@ Value BANDWIDTH (\d+\s+\w+)
 Value DELAY (\d+\s+\w+)
 Value ENCAPSULATION (\w+)
 Value QUEUE_STRATEGY (.*)
-Value IN_RATE (\d+)
-Value OUT_RATE (\d+)
-Value IN_PPS (\d+)
-Value OUT_PPS (\d+)
-Value DUPLEX (\w+)
-Value SPEED (\d+\w+)
-Value INPT_ERR (\d+)
-Value OUPT_ERR (\d+)
-Value INPT_DRPS (\d+)
-Value OUPT_DRPS (\d+)
 
 Start
   ^${INTERFACE} is ${LINK_STATUS}.*protocol is ${PROTOCOL_STATUS}
@@ -30,10 +20,4 @@ Start
   ^\s+Internet address is ${IP_ADDRESS}
   ^\s+MTU ${MTU}.*BW ${BANDWIDTH}.*DLY ${DELAY}
   ^\s+Encapsulation ${ENCAPSULATION}
-  ^\s+${DUPLEX} Duplex\,\s+${SPEED}.*
-  ^\s+Input queue\:\s+\d+\/\d+\/${INPT_DRPS}\/\d+\s+\(size\/max\/drops\/flushes\)\; Total output drops\: ${OUPT_DRPS}
-  ^\s+Queueing strategy: ${QUEUE_STRATEGY}
-  ^\s+.*second input rate ${IN_RATE} bits.sec.\s+${IN_PPS}.*
-  ^\s+.*second output rate ${OUT_RATE} bits.sec.\s+${OUT_PPS}.*
-  ^\s+${INPT_ERR} input errors
-  ^\s+${OUPT_ERR} output errors -> Record
+  ^\s+Queueing strategy: ${QUEUE_STRATEGY} -> Record
