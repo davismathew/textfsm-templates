@@ -8,12 +8,13 @@ Value ReloadTime (.*)
 Value ImageFile ([^"]+)
 Value HOSTNAME (\S+)
 Value UPTIME (.+)
-Value RUNNING_IMAGE (\S+)
-Value HARDWARE ((WS-C\S+)|(\d+)|(CSR\S+))
+#Value RUNNING_IMAGE (\S+)
+#Value HARDWARE ((WS-C\S+)|(\d+)|(CSR\S+))
 Value SERIAL (\S+)
 
 
 Start
+#  ^[sS]ystem\s+image\s+file\s+is\s+".*flash:${RUNNING_IMAGE}"
   ^Cisco IOS Software.*Version ${Version},
   ^${HOSTNAME}\s+uptime\s+is\s+${UPTIME}
   ^System returned to ROM by ${ReloadReason}
@@ -22,7 +23,8 @@ Start
   ^cisco ${Model} .* with ${Memory} bytes of memory
   ^Configuration register is ${ConfigRegister}
   ^[Ss]ystem serial number\s+:\s+${SERIAL}
-  ^[Cc]isco\s+${HARDWARE}.+
-  ^[sS]ystem\s+image\s+file\s+is\s+".*flash:${RUNNING_IMAGE}"
+#  ^[Cc]isco\s+${HARDWARE}.+
+#  ^[sS]ystem\s+image\s+file\s+is\s+".*flash:${RUNNING_IMAGE}"
 
-#hardware, running_image,serial
+
+#hardware, serial
