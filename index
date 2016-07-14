@@ -81,6 +81,7 @@ cisco_ios_show_interfaces_template, .*, cisco_ios, show interfaces
 cisco_ios_show_memory.template, .*, cisco_ios, show m[[emory]]
 cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow]] ip r[[oute]] summary
 cisco_ios_show_isis_neighbor.template, .*, cisco_ios, show isis neighbor
+cisco_ios_show_bgp_all_summary.template, .*, cisco_ios, show bgp all summary
 #cisco_ios_show_interfaces_template, .*, cisco_ios, sh[[ow]] inte[[rfaces]]
 #cisco_ios_show_memory_template, .*, cisco_ios, sh[[ow]] memory
 #cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow] ip route summary
