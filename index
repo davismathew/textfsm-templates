@@ -18,7 +18,7 @@ cisco_ios_show_ip_int_brief.template, .*, cisco_ios, sh[[ow]] ip int[[erface]] b
 #cisco_nxos_show_version.template, .*, cisco_nxos, sh[[ow]] ver[[sion]]
 #cisco_wlc_ssh_show_sysinfo.template, .*, cisco_wlc_ssh, sh[[ow]] sysi[[nfo]]
 cisco_ios_show_spanning-tree.template, .*, cisco_ios, sh[[ow]] sp[[anning-tree]]
-cisco_ios_show_ip_route.template, .*, cisco_ios, sh[[ow]] ip r[[oute]]
+#cisco_ios_show_ip_route.template, .*, cisco_ios, sh[[ow]] ip r[[oute]]
 cisco_ios_show_ip_bgp_summary.template, .*, cisco_ios, sh[[ow]] [[ip]] b[[gp]] sum[[mary]]
 cisco_ios_show_ip_bgp.template, .*, cisco_ios, sh[[ow]] [[ip]] b[[gp]]
 #cisco_ios_show_ip_bgp_summary.template, .*, cisco_ios, sh[[ow]] [[ip]] b[[gp]] sum[[mary]]
@@ -81,7 +81,7 @@ cisco_ios_show_vlan.template, .*, cisco_ios, sh[[ow]] vlan
 cisco_ios_show_interfaces_template, .*, cisco_ios, show interfaces
 #cisco_ios_show_memory_template, .*, cisco_ios, show m[[emory]]
 cisco_ios_show_memory.template, .*, cisco_ios, show m[[emory]]
-cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow]] ip r[[oute]] summary
+cisco_ios_show_ip_route_summary_template, .*, cisco_ios, sh[[ow]] [[ip]] route summary
 cisco_ios_show_isis_neighbor.template, .*, cisco_ios, show isis neighbor
 cisco_ios_show_bgp_all_summary.template, .*, cisco_ios, show bgp all summary
 #cisco_ios_show_interfaces_template, .*, cisco_ios, sh[[ow]] inte[[rfaces]]
