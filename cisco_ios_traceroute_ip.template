@@ -1,0 +1,10 @@
+Value HOPNUM (\S+)
+Value IPAddress (\d+\.\d+\.\d+\.\d+)
+
+Start
+  ^(\s*)${HOPNUM}(\s+)${IPAddress} -> Record
+  ^(\s*)${IPAddress}.* -> Record
+  ^(\s*)${IPAddress}.* -> Record
+
+EOF
+

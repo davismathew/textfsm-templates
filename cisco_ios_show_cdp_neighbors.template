@@ -6,4 +6,5 @@ Start
   ^Device.*ID -> CDP
 
 CDP
-  ^${NEIGHBOR}\s+${LOCAL_INTERFACE}\s+\d+\s+[\w+\s]+\S+\s+${NEIGHBOR_INTERFACE} -> Record
+  ^${NEIGHBOR} -> Continue
+  ^\s+${LOCAL_INTERFACE}\s+\d+\s+[\w+\s]+\S+\s+${NEIGHBOR_INTERFACE} -> Record

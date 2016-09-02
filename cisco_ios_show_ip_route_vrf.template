@@ -1,0 +1,8 @@
+Value VRFNAME (\S+)
+Value SOURCE (connected|static|isis|Total|bgp (\d+))
+Value NETWORKS (\d+)
+Value SUBNETS (\d+)
+
+Start
+  ^IP routing table name is\s+${VRFNAME}
+  ^${SOURCE}\s+${NETWORKS}\s+${SUBNETS}.* -> Record
